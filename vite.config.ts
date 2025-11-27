@@ -16,6 +16,11 @@ export default defineConfig((config) => {
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },
+    // ADICIONADO PARA O VERTEX:
+    server: {
+      host: true,
+      allowedHosts: true,
+    },
     build: {
       target: 'esnext',
     },
